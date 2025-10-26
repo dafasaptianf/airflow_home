@@ -168,9 +168,6 @@ airflow_home/
 ├── data/
 │   └── json_files/
 │
-├── logs/
-├── plugins/
-│
 ├── requirements.txt
 ├── Dockerfile
 ├── docker-compose.yaml
