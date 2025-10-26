@@ -1,0 +1,12 @@
+{"timestamp":"2025-10-25T13:00:02.159636Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-25T13:00:02.162212Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/test_postgres_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-25T13:00:02.228934Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/test_postgres_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2025-10-25T13:00:02.261334Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-10-25T13:00:02.261850Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-10-25T13:00:02.262264Z","level":"info","event":"Current task name:check_postgres_connection","logger":"task.stdout"}
+{"timestamp":"2025-10-25T13:00:02.262649Z","level":"info","event":"Dag name:test_postgres_dag","logger":"task.stdout"}
+{"timestamp":"2025-10-25T13:00:02.375288Z","level":"info","event":"✅ PostgreSQL connected successfully. Server time: 2025-10-25 20:00:02.372390+07:00","logger":"task.stdout"}
+{"timestamp":"2025-10-25T13:00:02.375787Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-10-25T13:00:02.400498Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-10-25T13:00:02.401005Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-10-25T13:00:02.401504Z","level":"info","event":"Task operator:<Task(PythonOperator): check_postgres_connection>","logger":"task.stdout"}

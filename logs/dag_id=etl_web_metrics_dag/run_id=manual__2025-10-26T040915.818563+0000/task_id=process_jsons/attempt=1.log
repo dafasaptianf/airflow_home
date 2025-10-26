@@ -1,0 +1,12 @@
+{"timestamp":"2025-10-26T04:09:17.169889Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-26T04:09:17.171839Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_web_metrics_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-26T04:09:17.257404Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/etl_web_metrics_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2025-10-26T04:09:17.294676Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:09:17.295987Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:09:17.297593Z","level":"info","event":"Current task name:process_jsons","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:09:17.298897Z","level":"info","event":"Dag name:etl_web_metrics_dag","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:09:17.370683Z","level":"info","event":"[Transform] Processed 0 JSON files.","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:09:17.392568Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-10-26T04:09:17.411652Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:09:17.412076Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:09:17.412387Z","level":"info","event":"Task operator:<Task(PythonOperator): process_jsons>","logger":"task.stdout"}

@@ -1,0 +1,17 @@
+{"timestamp":"2025-10-26T07:30:05.345847Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-26T07:30:05.347116Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_web_metrics_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-26T07:30:05.385048Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/etl_web_metrics_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2025-10-26T07:30:05.405420Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-10-26T07:30:05.406191Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-10-26T07:30:05.406655Z","level":"info","event":"Current task name:load_to_postgres","logger":"task.stdout"}
+{"timestamp":"2025-10-26T07:30:05.407237Z","level":"info","event":"Dag name:etl_web_metrics_dag","logger":"task.stdout"}
+{"timestamp":"2025-10-26T07:30:05.407809Z","level":"info","event":"[DEBUG] Running load_to_postgres()","logger":"task.stdout"}
+{"timestamp":"2025-10-26T07:30:05.429789Z","level":"info","event":"[DEBUG] xcom pulled: <class 'str'>","logger":"task.stdout"}
+{"timestamp":"2025-10-26T07:30:05.430727Z","level":"warning","event":"Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.","category":"FutureWarning","filename":"/opt/airflow/dags/etl_web_metrics_dag.py","lineno":74,"logger":"py.warnings"}
+{"timestamp":"2025-10-26T07:30:05.439557Z","level":"info","event":"[DEBUG] Loaded df from xcom. shape=(6, 4)","logger":"task.stdout"}
+{"timestamp":"2025-10-26T07:30:05.440417Z","level":"info","event":"[{'id': 'm1', 'runtime_date': '2025-07-30T11:11:40.000Z', 'load_time': 0.0406777778, 'message': 'VisualLoadTime'}, {'id': 'm1', 'runtime_date': '2025-07-30T08:58:25.714Z', 'load_time': 0.0658390079, 'message': 'VisualLoadTime'}, {'id': 'm2', 'runtime_date': '2025-07-30T05:40:04.285Z', 'load_time': 0.0636654762, 'message': 'VisualLoadTime'}, {'id': 'm3', 'runtime_date': '2025-07-30T10:33:52.085Z', 'load_time': 0.1986037468, 'message': 'VisualLoadTime'}, {'id': 'm3', 'runtime_date': '2025-07-30T11:29:07.723Z', 'load_time': 0.238935897, 'message': 'VisualLoadTime'}]","logger":"task.stdout"}
+{"timestamp":"2025-10-26T07:30:05.476016Z","level":"info","event":"[Load] Inserted 6 rows into web_metrics_dw.","logger":"task.stdout"}
+{"timestamp":"2025-10-26T07:30:05.476666Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-10-26T07:30:05.495374Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-10-26T07:30:05.495957Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-10-26T07:30:05.496603Z","level":"info","event":"Task operator:<Task(PythonOperator): load_to_postgres>","logger":"task.stdout"}

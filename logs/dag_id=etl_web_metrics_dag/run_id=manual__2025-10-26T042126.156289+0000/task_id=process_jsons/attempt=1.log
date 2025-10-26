@@ -1,0 +1,25 @@
+{"timestamp":"2025-10-26T04:21:27.462635Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-26T04:21:27.464129Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_web_metrics_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-26T04:21:27.505661Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/etl_web_metrics_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2025-10-26T04:21:27.539883Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.540421Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.540815Z","level":"info","event":"Current task name:process_jsons","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.541249Z","level":"info","event":"Dag name:etl_web_metrics_dag","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.542238Z","level":"info","event":"[DEBUG] Reading JSON files from: /opt/airflow/data/json_files","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.545267Z","level":"info","event":"[DEBUG] Found 8 files","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.563116Z","level":"info","event":"[DEBUG] Processing m1: 3 timestamps, 3 values","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.571355Z","level":"info","event":"[DEBUG] Processing m1: 70 timestamps, 70 values","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.577834Z","level":"info","event":"[DEBUG] Processing m2: 70 timestamps, 70 values","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.582774Z","level":"info","event":"[DEBUG] Processing m2: 0 timestamps, 0 values","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.583292Z","level":"info","event":"[WARN] Skipping /opt/airflow/data/json_files/result-json-3.json: no numeric Values for m2","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.591369Z","level":"info","event":"[DEBUG] Processing m3: 561 timestamps, 561 values","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.600396Z","level":"info","event":"[DEBUG] Processing m3: 637 timestamps, 637 values","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.607092Z","level":"info","event":"[DEBUG] Processing m3: 133 timestamps, 133 values","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.610757Z","level":"info","event":"[DEBUG] Processing m4: 0 timestamps, 0 values","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.611323Z","level":"info","event":"[WARN] Skipping /opt/airflow/data/json_files/result-json-7.json: no numeric Values for m4","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.614125Z","level":"info","event":"[Transform] Processed 6 JSON rows. DataFrame shape: (6, 4)","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.617129Z","level":"info","event":"[DEBUG] Sample data: [{'id': 'm1', 'runtime_date': Timestamp('2025-07-30 11:11:40+0000', tz='UTC'), 'load_time': 0.04067777777777778, 'message': 'VisualLoadTime'}, {'id': 'm1', 'runtime_date': Timestamp('2025-07-30 08:58:25.714285824+0000', tz='UTC'), 'load_time': 0.06583900793650793, 'message': 'VisualLoadTime'}, {'id': 'm2', 'runtime_date': Timestamp('2025-07-30 05:40:04.285714432+0000', tz='UTC'), 'load_time': 0.06366547619047619, 'message': 'VisualLoadTime'}, {'id': 'm3', 'runtime_date': Timestamp('2025-07-30 10:33:52.085561600+0000', tz='UTC'), 'load_time': 0.19860374682622453, 'message': 'VisualLoadTime'}, {'id': 'm3', 'runtime_date': Timestamp('2025-07-30 11:29:07.723704832+0000', tz='UTC'), 'load_time': 0.23893589696867756, 'message': 'VisualLoadTime'}]","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.634199Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-10-26T04:21:27.654219Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.654971Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-10-26T04:21:27.655715Z","level":"info","event":"Task operator:<Task(PythonOperator): process_jsons>","logger":"task.stdout"}

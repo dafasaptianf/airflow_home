@@ -1,0 +1,18 @@
+{"timestamp":"2025-10-26T01:14:00.887198Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-26T01:14:00.889150Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_dag_from_scripts.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-26T01:14:00.971391Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-10-26T01:14:00.972063Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-10-26T01:14:00.972767Z","level":"info","event":"Current task name:run_etl_process","logger":"task.stdout"}
+{"timestamp":"2025-10-26T01:14:00.973160Z","level":"info","event":"Dag name:etl_retail_transactions_dag","logger":"task.stdout"}
+{"timestamp":"2025-10-26T01:14:00.973602Z","level":"info","event":"Starting ETL Process","logger":"task.stdout"}
+{"timestamp":"2025-10-26T01:14:00.973945Z","level":"info","event":"Extracting data from source_db...","logger":"task.stdout"}
+{"timestamp":"2025-10-26T01:14:01.040807Z","level":"warning","event":"pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.","category":"UserWarning","filename":"/opt/airflow/dags/etl_dag_from_scripts.py","lineno":20,"logger":"py.warnings"}
+{"timestamp":"2025-10-26T01:14:01.048387Z","level":"info","event":"[Extract] 3 rows extracted from source_db","logger":"task.stdout"}
+{"timestamp":"2025-10-26T01:14:01.049147Z","level":"info","event":"Transforming data (convert timestamps to UTC)...","logger":"task.stdout"}
+{"timestamp":"2025-10-26T01:14:01.051470Z","level":"info","event":"[Transform] 3 rows after transformation","logger":"task.stdout"}
+{"timestamp":"2025-10-26T01:14:01.052087Z","level":"info","event":"Loading data to warehouse_db with soft delete sync...","logger":"task.stdout"}
+{"timestamp":"2025-10-26T01:14:01.117763Z","level":"info","event":"Warehouse updated with soft-deleted rows.","logger":"task.stdout"}
+{"timestamp":"2025-10-26T01:14:01.118413Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-10-26T01:14:01.138385Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-10-26T01:14:01.138952Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-10-26T01:14:01.139530Z","level":"info","event":"Task operator:<Task(PythonOperator): run_etl_process>","logger":"task.stdout"}
