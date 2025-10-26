@@ -88,7 +88,6 @@ def etl_process():
     warehouse_ids = [r[0] for r in cur.fetchall()]
     source_ids = df['id'].tolist()
 
-    # Dapatkan waktu UTC saat ini SATU KALI saja
     # Convert to naive UTC before writing to a timestamp WITHOUT time zone column
     current_utc_time = datetime.now(timezone.utc).astimezone(timezone.utc).replace(tzinfo=None)
     
@@ -96,7 +95,7 @@ def etl_process():
     if missing_ids:
         print(f"Marking {len(missing_ids)} rows as deleted (soft delete) at {current_utc_time}...")
         
-        # Gunakan parameter binding, bukan f-string, untuk keamanan
+        # use parameter binding
         for mid in missing_ids:
             cur.execute("""
                 UPDATE retail_transactions_dw
