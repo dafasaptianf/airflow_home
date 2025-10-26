@@ -4,6 +4,19 @@
 ## Overview
 Proyek ini bertujuan untuk membangun pipeline **ETL (Extract, Transform, Load)** menggunakan **Apache Airflow** yang berjalan sepenuhnya di dalam **Docker**.
 
+Database Architecture
+Baik source_db maupun warehouse_db dijalankan di dalam container PostgreSQL yang sama melalui layanan postgres pada docker-compose.yaml.
+Airflow mengakses kedua database tersebut menggunakan dua koneksi terpisah:
+
+```bash
+postgres_local → untuk database sumber (source_db)
+```
+```bash
+postgres_warehouse → untuk database tujuan (warehouse_db)
+```
+
+Dengan pendekatan ini, seluruh pipeline ETL (Airflow, PostgreSQL, Redis) berjalan sepenuhnya di dalam ekosistem Docker, tanpa ketergantungan pada instalasi lokal.
+
 ### Fitur Utama
 1.  Ekstraksi dan konsolidasi data **JSON** menjadi satu tabel terstruktur di PostgreSQL.
 2.  ETL dari **source_db** ke **warehouse_db** menggunakan metode **soft delete**.
