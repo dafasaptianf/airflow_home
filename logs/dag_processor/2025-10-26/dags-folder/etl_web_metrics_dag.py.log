@@ -1,2 +1,0 @@
-{"timestamp":"2025-10-26T07:56:08.592226Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_web_metrics_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
-{"timestamp":"2025-10-26T07:56:08.616228Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/etl_web_metrics_dag.py","lineno":2,"logger":"py.warnings"}
