@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS retail_transactions_dw (
   deleted_at timestamptz
 );
 
-CREATE TABLE IF NOT EXISTS json_runtime_log (
+CREATE TABLE IF NOT EXISTS web_metrics_dw (
   id TEXT,
   runtime_date timestamptz,
   load_time NUMERIC,
