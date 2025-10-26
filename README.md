@@ -9,10 +9,10 @@ Baik source_db maupun warehouse_db dijalankan di dalam container PostgreSQL yang
 Airflow mengakses kedua database tersebut menggunakan dua koneksi terpisah:
 
 ```bash
-postgres_local → untuk database sumber (source_db)
+postgres_docker_src → untuk database sumber (source_db)
 ```
 ```bash
-postgres_warehouse → untuk database tujuan (warehouse_db)
+postgres_docker_wh → untuk database tujuan (warehouse_db)
 ```
 
 Dengan pendekatan ini, seluruh pipeline ETL (Airflow, PostgreSQL, Redis) berjalan sepenuhnya di dalam ekosistem Docker, tanpa ketergantungan pada instalasi lokal.
