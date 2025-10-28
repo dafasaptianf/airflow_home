@@ -187,7 +187,7 @@ airflow_home/
 └── README.md
 ```
 
-### 🧰 Troubleshooting
+### Troubleshooting
 
 | Masalah | Solusi |
 | --- | --- |
