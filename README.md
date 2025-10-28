@@ -21,7 +21,7 @@ Dengan pendekatan ini, seluruh pipeline ETL (Airflow, PostgreSQL) berjalan sepen
 1.  Ekstraksi dan konsolidasi data **JSON** menjadi satu tabel terstruktur di PostgreSQL.
 2.  ETL dari **source_db** ke **warehouse_db** menggunakan metode **soft delete**.
 3.  Pipeline berjalan otomatis menggunakan **Airflow scheduler** setiap awal bulan atau setiap jam.
-4.  Semua komponen utama — Airflow, PostgreSQL, dan Redis — dijalankan melalui **Docker Compose**.
+4.  Semua komponen utama — Airflow, PostgreSQL — dijalankan melalui **Docker Compose**.
 
 ---
 
