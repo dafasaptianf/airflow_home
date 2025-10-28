@@ -77,7 +77,7 @@ CREATE DATABASE source_db;
 CREATE DATABASE warehouse_db;
 ```
 
-Next: Buat Buat Tabel di database (Contoh ada pada folder init_sql)
+Next: Buat Tabel di database (Contoh ada pada folder init_sql)
 
 ### Airflow Configuration
 
