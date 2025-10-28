@@ -15,7 +15,7 @@ postgres_docker_src → untuk database sumber (source_db)
 postgres_docker_wh → untuk database tujuan (warehouse_db)
 ```
 
-Dengan pendekatan ini, seluruh pipeline ETL (Airflow, PostgreSQL, Redis) berjalan sepenuhnya di dalam ekosistem Docker, tanpa ketergantungan pada instalasi lokal.
+Dengan pendekatan ini, seluruh pipeline ETL (Airflow, PostgreSQL) berjalan sepenuhnya di dalam ekosistem Docker, tanpa ketergantungan pada instalasi lokal.
 
 ### Fitur Utama
 1.  Ekstraksi dan konsolidasi data **JSON** menjadi satu tabel terstruktur di PostgreSQL.
