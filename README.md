@@ -1,5 +1,5 @@
 
-# Airflow ETL Pipeline - Lion Parcel Technical Test
+# Airflow ETL Pipeline - Lion Parcel
 
 ## Overview
 Proyek ini bertujuan untuk membangun pipeline **ETL (Extract, Transform, Load)** menggunakan **Apache Airflow** yang berjalan sepenuhnya di dalam **Docker**.
